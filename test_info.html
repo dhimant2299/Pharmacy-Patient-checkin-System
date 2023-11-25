@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <title>Reception</title>
+       <link rel="styleSheet" href="databasestyle.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="title"> 
+             Test Info 
+            </div>
+            <div class="form">
+                <form action="testdetails.php" method="post">   
+
+                <div class="input_field">
+                    <label> Date</label>
+                    <input type="date" class="input" name="date">
+                </div>
+
+                <div class="input_field">
+                    <label for ="test"> Test Type : </label> 
+                    
+                        <select name = "test" id="test" name="test">
+                            
+                            <option value="checkup">Full body Checkup</option>
+                            <option value="sugar">Blood Sugar and Cholesterol Level</option>
+                            <option value="MRI">MRI Scan</option>
+                            <option value="CT">CT Scan</option>
+                            <option value="Xray">X-ray</option>
+            
+                        </select>
+                    </div>
+
+                
+
+            
+
+            <div class="input_field">
+                <input type="submit" value="Find Test Info" class="button"/>
+           </div>
+        </form>
+
+            </div>
+      
+        </div>
+ 

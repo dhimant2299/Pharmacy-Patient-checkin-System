@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <title>Reception</title>
+       <link rel="styleSheet" href="databasestyle.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="title"> 
+             Test Result Update 
+            </div>
+            <div class="form">
+                <form action="afterresults.php" method="post">
+
+                    <div class="input_field">
+                        <label> Insurance Number</label>
+                        <input type="number" class="input" name="insurance_no">
+                    </div>
+    
+             
+
+             <div class="input_field">
+                <label for ="test"> Test Type : </label> 
+                
+                    <select name = "test" id="test">
+                        
+                        <option value="checkup">Full body Checkup</option>
+                        <option value="sugar">Blood Sugar and Cholesterol Level</option>
+                        <option value="MRI">MRI Scan</option>
+                        <option value="CT">CT Scan</option>
+                        <option value="Xray">X-ray</option>
+        
+                    </select>
+                </div>
+             
+             <div class="input_field">
+                <label> Test Result </label>
+                <input type="text" class="input" name="result">
+            </div>
+
+            <div class="input_field">
+                <label> Test Description</label>
+                <textarea name="description" class="disc"> Enter detailed test description here ...</textarea>
+            </div>
+
+             
+
+            <div class="input_field">
+                <label> Doctor ID</label>
+                <input type="text" class="input" name="doctor_ID">
+            </div>
+            <div class="input_field">
+                <input type="submit" value="Add Test Result" class="button"/>
+            </div>
+        </form>
+            </div>
+      
+        </div>
+    </body>
+</html>

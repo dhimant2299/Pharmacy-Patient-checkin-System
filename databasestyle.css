@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: rgb(159, 117, 74);
+    padding: 50 40px;
+}
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: rgb(207, 204, 163);
+    margin: 20px auto;
+    padding: 60px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+}
+
+.wrapper .title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: rgb(0, 0, 0);
+    text-transform:capitalize;
+    text-align: center;
+    
+}
+.wrapper .form{
+    width: 100%;    
+}
+.wrapper .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.wrapper .form .input_field label {
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.wrapper .form .input_field .input{
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    
+    
+}
+.wrapper .form .input_field .input:hover{
+    background-color: #cebd93;
+}
+
+
+
+.wrapper .form .input_field .custom_select{
+    position: 100%;
+    width: 100%;
+    height: 37px;
+}
+.wrapper .form .input_field .custom_select select:hover{
+    background-color: #e3d7b8;
+}
+.wrapper .form .input_field .custom_select select{
+   
+    appearance: none;
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+}
+.wrapper .form .input_field .input:focus,
+.wrapper .form .input_field select:focus
+{
+    border: 1px solid #9cbee6;
+}
+.wrapper .form .input_field p{
+    font-size: 14px;
+    color: #757575;
+    font-style: bold;
+}
+.wrapper .form .input_field .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;   
+}
+.wrapper .form .input_field .check input[type="checkbox"]{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+}
+.wrapper .form .input_field .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #a34949;
+    display: block;
+    position: relative;
+    background-color: rgb(252, 247, 188);
+}
+.wrapper .form .input_field .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: none;
+
+}
+.wrapper .form .input_field .check input[type="checkbox"]:checked ~ .checkmark{
+    background: #a07602;
+}
+.wrapper .form .input_field .check input[type="checkbox"]:checked ~ .checkmark::before{
+    display: block;
+}
+.wrapper .form .input_field .button{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #e5bd51;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+.wrapper .form .input_field .button {
+    width: 100%;
+    padding: 8px 10px;
+    text-decoration:solid;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: bold;
+    border: 0;
+    background: #dab246;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+.wrapper .form .input_field .button:hover{
+    background: #886505;
+}
+.wrapper .form .input_field .disc{
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 2px;
+    height: 300px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    text-align: top;
+    align-items: flex-start;
+
+}
